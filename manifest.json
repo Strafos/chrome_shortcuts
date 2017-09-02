@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Shortcuts",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js", "jquery-3.2.1.js"]
+    }
+  ],
+
+  // "browser_action": {
+  //   "default_icon": "icon.png"
+  // },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
